@@ -2,7 +2,7 @@ class RingBuffer:
   def __init__(self, capacity):
     self.capacity = capacity
     self.current = 0
-    self.storage = [None]*capacity
+    self.storage = [None] * capacity
 
   def append(self, item):
       self.storage[self.current] = item
@@ -12,3 +12,5 @@ class RingBuffer:
 
   def get(self):
       return [x for x in self.storage if x is not None]
+
+
