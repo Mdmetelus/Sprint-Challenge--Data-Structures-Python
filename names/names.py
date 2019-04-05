@@ -13,7 +13,7 @@ f.close()
 duplicates = []
 
 # python set seems fastest
-# using it the time is best at = 0.004643
+# using it the time is best at = 0.003446
 setA = set(names_1)
 for name in names_2:
     if name in setA:
